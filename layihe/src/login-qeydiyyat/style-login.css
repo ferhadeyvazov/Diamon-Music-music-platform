@@ -1,0 +1,237 @@
+.login{-webkit-animation:scale-in-center .8s cubic-bezier(.25,.46,.45,.94) .5s both;animation:scale-in-center .8s cubic-bezier(.25,.46,.45,.94) .5s both}
+
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../../../Ethnocentric/Ethnocentric.otf);
+}
+/* ??????????????????????????????????????????????????????? */
+
+@font-face {
+    font-family: 'Abel Pro';
+    src: url('../Fonts/Abel-Pro/AbelPro-Regular.woff2') format('woff2'),
+        url('../Fonts/Abel-Pro/AbelPro-Regular.woff') format('woff');
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+background: url(../Images/Background-Img/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position-y: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+    position: relative;
+    padding: 50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0.5px 35px rgba(0, 0, 0, 0.2);
+    
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+.login{
+/* width: 320px;
+height: 420px;
+background: #000;
+color: #fff;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+padding: 70px 30px; */
+position: relative;
+width: 100%;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: -130px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Ethnocentric;
+}
+.login p{
+    margin: 0;
+    padding: 0;
+    /* font-weight: bold; */
+font-family: 'Eurostile LT Pro Unicode';
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login input[type="submit"]:hover{
+cursor: pointer;
+background: #ffc107;
+color: #000;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    color: darkgrey;
+}
+.login a:hover{
+color: #ffc107;
+font-weight: 700;
+}
+/* __________________-_______________-__________ */
+
+
+.wrapper{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+}
+.wrapper .button{
+display: flex;
+border: solid purple;
+height: 60px;
+width: 60px;
+float: left;
+margin: 0 5px;
+overflow: hidden;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease-out;
+}
+.wrapper .feysbuk:hover{
+    width: 200px;
+    background: #4267b2;
+}
+.wrapper .gogili:hover{
+    width: 200px;
+    background: white;
+}
+.wrapper .alma:hover{
+    width: 200px;
+    background: black;
+}
+.wrapper .button .icon{
+  display: flex;
+  justify-content: center;
+  border: solid yellow;
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    color: black;
+}
+.wrapper .button a{
+border: solid;
+flex-wrap: wrap;
+font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.icon .fab{
+color: white;
+}
+.gogili span{
+    color: crimson;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    color: white;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    color: crimson;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    color: white;
+}
+.wrapper .button .icon i{
+    font-size: 30px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) a{
+    color: white;
+}
+.wrapper .button:nth-child(2) a{
+    color: crimson;
+}
+.wrapper .button:nth-child(3) a{
+    color: white;
+}
+.wrapper .button:nth-child(1) i:hover{
+    color: white;
+}
+.wrapper .button:nth-child(2) i:hover{
+    color: crimson;
+}
+.wrapper .button:nth-child(3) i:hover{
+    color: white;
+}
+
+
+
+
+

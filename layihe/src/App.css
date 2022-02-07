@@ -1,0 +1,1086 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+Pro:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../src/Fonts/Ethnocentric/Ethnocentric.otf);
+}
+@font-face {
+    font-family: Evo;
+    src: url(../src/Fonts/Evo/Evo.otf);
+}
+@font-face {
+    font-family: FryPro;
+    src: url(../src/Fonts/FryPro/FryPro.otf);
+}
+@font-face {
+    font-family: Just_tell_me_what;
+    src: url(../src/Fonts/Just_tell_me_what/Just\ tell\ me\ what.otf);
+}
+@font-face {
+    font-family: Revue;
+    src: url(../src/Fonts/Revue/Revue.ttf);
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+font-family: 'Source Serif Pro', serif;
+}
+  
+  /* menubar */
+.menubar{
+  display: flex;
+  flex-direction: column;
+  background-color: #0b011f;
+  padding: 0 60px;
+}
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-width: 350px;
+}
+.menubar ul li{
+  margin-bottom: 0.6rem;
+}
+.menubar ul li a{
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.menubar ul .active{
+  color: rgb(255, 145, 0);
+}
+.menubar ul li a:hover{
+  font-weight:lighter;
+  color: rgb(255, 145, 0);
+  text-shadow: 0 0 30px #eee;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  margin: 8px 5px 0 0;
+width: 52px;
+height: 7vh;
+}
+.logo h2{
+  width: 251px;
+}
+.logo h2 a{
+  color: white;
+  font-family: Ethnocentric;
+
+}
+#checkbox{
+  display: none;
+}
+.burger{
+  display: none;
+}
+.burger div{
+width: 25px;
+height: 5px;
+background-color: white;
+margin: 5px;
+}
+/* ----------HOME--------- */
+
+.slash{
+  background: url(./Images/Background-Img/Dj.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 150px;
+}
+.slash h1{
+  color: #ff5450;
+  width: 80%;
+  font-size: 3.5rem;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #ff5450;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4;
+  }
+}
+
+
+
+
+         .slash .ruh {background-image: linear-gradient(to right, #460645 0%, #ff2cdf  51%, #ff5450  100%)}
+         .slash .ruh {
+            margin: 10px;
+            padding: 15px 38px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: large;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            border: none;
+          }
+          .slash .ruh a{
+            color: #fff;
+          }
+
+          .slash .ruh:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          .slash p{
+            width: 80%;
+            color: white;
+            margin: 35px 0;
+            font-size:medium;
+          }
+.carousel .slash:nth-child(2){
+  background-image: url(./Images/Background-Img/Janrlar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.carousel .slash:nth-child(3){
+  background-image: url(./Images/Festivallar/festival\ bkr-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel{
+  overflow: hidden;
+}
+.carousel figure{
+  /* position: relative; */
+  display: flex;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+.carousel figure .slash{
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  40% {
+    left: -120%;
+  }
+  60% {
+    left: -120%;
+  }
+  80% {
+    left: -240%;
+  }
+  100% {
+    left: -240%;
+  }
+}
+
+/* -----Janrlar-------- */
+.beden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #131313;
+}
+.janrlar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+.janrlar .kart1{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+.janrlar .kart1::before{
+  content: "Diamon Music";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 6em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.janrlar .kart1::after{
+  content: "Janrlar";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.janrlar .kart1:hover:before,
+.janrlar .kart1:hover:after{
+  opacity: 0.04;
+}
+.janrlar .kart1 .name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+  font-family: Revue;
+}
+.janrlar .kart1:hover .name{
+top: 40px;
+opacity: 1;
+}
+.janrlar .kart1 .buy{
+  font-family: Just_tell_me_what;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #fff;
+  background: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+.janrlar .kart1:hover .buy{
+bottom: 30px;
+opacity: 1;
+}
+.janrlar .kart1 .circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #fff;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%,-50%,50px);
+}
+.janrlar .kart1 .product{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,0px);
+}
+.janrlar .kart1:nth-child(1) .circle,
+.janrlar .kart1:nth-child(1) .buy{
+background: #379b;
+}
+.janrlar .kart1:nth-child(2) .circle,
+.janrlar .kart1:nth-child(2) .buy{
+background: #9bdc;
+}
+.janrlar .kart1:nth-child(3) .circle,
+.janrlar .kart1:nth-child(3) .buy{
+background: #fb4b;
+}
+.janrlar .kart1:hover .product{
+transform: translate3d(-50%,-50%,100px);
+}
+/* Janr ROCK */
+:root{
+  --background: #141414;
+  --text-color: #fff;
+  --primary-color: #63ff69;
+  --secondary-color: #000;
+  --alpha-color: rgba(0, 0, 0, 0.5);
+  --shadow: 0 15px 40px var(--alpha-color);
+}
+html{
+  background: var(--background);
+  /* display: flex;
+  justify-content: center; */
+}
+.rock{
+  width: 100%;
+  height: 100vh;
+  /* max-width: 375px; */
+  /* position: relative; */
+  background: var(--background);
+  color: var(--text-color);
+}
+.playlist{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding: 30px 0;
+  background: var(--background);
+  z-index: 3;
+  transition: 1s;
+  overflow: auto;
+}
+.playlist.active{
+  right: 0;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  
+}
+.play>svg{
+  margin-right: 440px;
+}
+.play-ad{
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.queue{
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--alpha-color);
+}
+.queue-cover{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+}
+.queue-cover img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.queue-cover svg{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 30px;
+color: var(--primary-color);
+display: none;
+}
+.queue.active svg{
+  display: block;
+}
+.queue .name{
+  font-size: 22px;
+  text-transform: capitalize;
+}
+/* MUSIC plAYER */
+.music-player-section{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: var(--alpha-color);
+  backdrop-filter: blur(50px);
+  transition: 1s;
+}
+.music-seek-bar{
+  -webkit-appearance: none;
+  width: 100%;
+  position: absolute;
+  top: -4px;
+  height: 8px;
+  background: var(--secondary-color);
+  overflow: hidden;
+}
+.music-seek-bar::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 10px;
+  width: 5px;
+  background: var(--primary-color);
+  cursor: pointer;
+  box-shadow: -800px 0 0 800px var(--primary-color);
+}
+.current-song-name{
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.controls{
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 30px;
+}
+.controls>.sipan{
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+.music-player-section.active .controls{
+  justify-content: space-between;
+}
+.music-player-section.active .controls>.sipan{
+font-size: 25px;
+display: block;
+opacity: 0.5;
+}
+.music-player-section.active .controls .sipan.active{
+  color: var(--primary-color);
+  opacity: 1;
+}
+.controls .main .sipan{
+  margin: 0 5px;
+  display: none;
+}
+.controls .main .sipan.active{
+  display: inline;
+}
+.music-player-section .hide{
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+.music-player-section.active .hide{
+  display: block;
+  opacity: 1;
+}
+.music-player-section.active{
+  width: 95%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.music-player-section.active .music-seek-bar{
+  position: relative;
+  display: block;
+  border-radius: 50px;
+  margin: auto;
+}
+.music-player-section.active .current-song-name{
+  font-size: 40px;
+  margin-top: 70px;
+}
+.music-player-section.active .controls{
+  /* width: 100%; */
+  font-size: 50px;
+
+}
+.artist-name{
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.cover{
+  width: 30vh;
+  height: 30vh;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.current-time{
+  position: absolute;
+  margin-top: 5px;
+  left: 30px;
+}
+.duration{
+  position: absolute;
+  margin-top: 5px;
+  right: 30px;
+}
+.icon{
+  position: absolute;
+  top: 110px;
+  transform: scale(1.3);
+}
+.back-btn{
+  left: 40px;
+}
+.nav-btn{
+  right: 40px;
+}
+.volume-slider{
+  -webkit-appearance: none;
+  width: 100px;
+  position: absolute;
+  right: -35px;
+  bottom: 80px;
+  transform: rotate(-90deg);
+  border-radius: 20px;
+  background: var(--alpha-color);
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}
+.volume-slider.active{
+  opacity: 1;
+  display: block;
+}
+.volume-slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 40px;
+  width: 10px;
+  background-color: var(--primary-color);
+  box-shadow: -200px 0 1px 200px var(--primary-color);
+}
+
+
+
+
+
+
+          /*Contacts*/
+          .contactUs{
+            padding: 40px 0;
+    background: url(./Images/Background-Img/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+          }
+          .contactUs .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+          }
+          .contactUs .title h2{
+            color: black;
+            font-weight: 500;
+            font-family: Evo;
+          }          
+.box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+        .contact{
+          padding: 30px;
+          /* background: #fff; */
+          /* box-shadow: 0 5px 35px rgba(0,0,0,0,15); */
+          
+        }
+        .contact h2{
+          color: #0e3959;
+          font-weight: 500;
+          font-size: 1.4em;
+          margin-bottom: 10px;
+          font-family: FryPro;
+        }
+          /* FORM */
+
+.formBox .row50{
+  display: flex;
+  gap: 20px;
+}
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  /* width: 50%; */
+}
+/* .formBox .row100 .inputBox{
+width: 100%;
+} */
+.inputBox span{
+  color: #18b7ff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-family: Evo;
+}
+.inputBox input{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  opacity: 0.6;
+}
+.inputBox textarea{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+.inputBox input[type="submit"]
+{
+  background: #ff578b;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  max-width: 120px;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+.input::placeholder{
+  color: #999;
+}
+
+/* Info */
+
+.info{
+  /* background: #0e3959; */
+  padding: 3px;
+  /* opacity: 0.5; */
+}
+.info h2{
+  color: #fff;
+  margin: 1.1rem 0;
+  font-family: FryPro;
+}
+.info .infobox div{
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+.info .infobox div span{
+  min-width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #18b7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info .infobox div p{
+  color: #fff;
+  font-size: 1.1em;
+  font-family: Evo;
+}
+.info .infobox div a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: Evo;
+}
+.sci{
+  display: flex;
+  margin-top: 40px;
+}
+.sci li{
+  list-style: none;
+  margin-right: 15px;
+}
+.sci li a{
+  color: #fff;
+  font-size: 2em;
+  color: #ccc;
+}
+.sci li a:hover{
+  color: #fff;
+}
+
+/* ,,,,,,,,,,,,,Tədbirlər,,,,,,,,,,,,, */
+
+.tedbirler{
+background-image: url(./Images/Festivallar/arxa\ plan1.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 10px;
+}
+
+.card{
+  max-width: 35ch;
+  background-image: url(./Images/Tədbir-elanlari/Nefes\ festivali.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 0;
+  margin: 50px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.tedbirler .card:nth-child(2){
+background-image: url(./Images/Tədbir-elanlari/Jara\ 2022.jpeg);
+background-size: cover;
+background-position: center;
+}
+.tedbirler .card:nth-child(3){
+background-image: url(./Images/Tədbir-elanlari/Color\ Summer\ Festival.jpg);
+background-size: cover;
+background-position: center;
+}
+.tedbirler .card:nth-child(4){
+background-image: url(./Images/Tədbir-elanlari/KLub\ partisi.jpg);
+background-size: cover;
+background-position: center;
+}
+.tedbirler .card:nth-child(5){
+background-image: url(./Images/Tədbir-elanlari/Soyuq\ eller\ isti\ urekler.jpg);
+background-size: cover;
+background-position: center;
+}
+.tedbirler .card:nth-child(6){
+background-image: url(./Images/Tədbir-elanlari/Budva\ klub\ partisi.jpg);
+background-size: cover;
+background-position: center;
+}
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+.card-content{
+  --padding: 1.5rem;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+.card:hover .card-content,
+.card:focus-within .card-content{
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+.card:focus-within .card-content{
+  transition-duration: 0ms;
+}
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card:hover .card-content > *:not(.card-title),
+.card:focus-within .card-content > *:not(.card-title)
+{
+opacity: 1;
+}
+.card-tittle{
+  position: relative;
+  width: max-content;
+  color: #fff;
+  text-align: center;
+}
+.card-tittle::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -0.5);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: hsl(142, 90%, 61%);
+  transform: scaleX(0);
+  transition: transform 500ms ease;
+}
+.card:hover .card-tittle::after,
+.card:focus-within .card-tittle::after
+{
+  transform: scaleX(1);
+}
+.card-body{
+  color: #03a9f5;
+  margin: 0.25em 0;
+  flex-direction: column;
+  font-family: Evo;
+
+}
+.inputlar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputlar input{
+  padding: 0.5em 1.25em;
+  margin: 0 1.25em;
+  color: #03a9f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  border: none;
+  border-radius: 1em;
+  font-family: FryPro;
+}
+.inputlar input:hover{
+  background: hsl(142, 90%, 61%);
+  color: #050801;
+  box-shadow: 0 0 5px hsl(142, 90%, 61%),
+  0 0 25px hsl(142, 90%, 61%),
+  0 0 50px hsl(142, 90%, 61%),
+  0 0 200px hsl(142, 90%, 61%);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  cursor: pointer;
+}
+
+/* --------\\\\\--Qeydiyyat--\\\\\\------- */
+.container{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
+
+@-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0 0 0;
+    background: url(./Images/Background-Img/efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px; 
+}
+.container .qeydiyyat{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .qeydiyyat::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+}
+.container form .istifadeci{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .istifadeci .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.istifadeci .input-box .ad{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.istifadeci .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    background: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.istifadeci .input-box input:focus,
+.istifadeci .input-box input:valid{
+border-color: #9b59b6;
+}
+form .cins .cins-1{
+font-size: 20px;
+font-weight: 500;
+}
+form .cins .kateqoriya{
+display: flex;
+width: 40%;
+margin: 14px 0;
+justify-content: space-between;
+}
+.kateqoriya{
+    font-weight: 500;
+}
+.button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+.button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(-90deg, rgba(255,0,189,1) 0%, rgba(154,0,255,1) 61%, rgba(94,0,255,1) 100%);
+}
+.button input:hover{
+    background: linear-gradient(90deg, rgba(255,0,189,1) 0%, rgba(154,0,255,1) 61%, rgba(94,0,255,1) 100%);
+}
+
+/*--------------------------------------------------------------*/
+
+@media screen and (max-width: 584px){
+    .container{
+        max-width: 100%;
+        height: 110vh;
+    }    
+    form .istifadeci .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .istifadeci{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .istifadeci::-webkit-scrollbar{
+        width: 0;
+
+    }
+}
+
+@media (max-width: 425px){
+    form .cins .kateqoriya{
+        width: 100%;
+        }
+     
+}
+
+/* -------Responsive design------- */
+
+@media screen and (max-width: 992px)
+{
+  .box{
+    grid-column: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "forms"
+    "info"
+    "map";
+  }
+  .formBox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputBox{
+    width: 100%;
+  }
+  .map
+  {
+    padding: 0;
+    min-height: 300px;
+  }
+.burger{
+  display: block;
+}
+.menubar{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar{
+  display: none;
+}
+.sidebar-active{
+  position: absolute;
+  display: grid;
+  right: -43%;
+  top: 40px;
+  background-color:#0b011f;
+  width: 30%;
+  height: 100vh;
+  border-radius: 7px;
+  text-align: center;
+  align-items: center;
+  transform: translateX(-300px);
+  transition: transform 3s ease;
+
+}
+}
+@media screen and (max-width: 516px)
+{
+  .menubar{
+    padding: 0;
+  }
+.logo h2{
+width: 150px;
+}
+.slash{
+  padding: 200px 0;
+}
+.burger{
+  display: block;
+}
+}
